@@ -43,4 +43,28 @@ This is for my practice and notes to excel in Algorithms
 		}
 	}
 	```
-2. Quick Sort:
+2. Selection Sort:
+	* Definition: The sorting is done by selecting the smallest element and placing it in the first
+	* Time Complexity: O(n2) 
+	* When it is good: None
+	* When it is bad: Never Use
+	
+	```java
+	public void selectionSort(int arr[]){
+		for(int i=0;i<arr.length-1;i++){
+			int min = arr[i];
+			int minId = i;
+			for(int j=i+1; j<arr.length; j++){
+				if(arr[j]<min){
+					min = arr[j];
+					minId = j;
+				}
+			}
+			
+			int temp = arr[i];
+			arr[i] = min;
+			arr[minId] = temp;
+			
+		}
+	}
+	```

@@ -1,14 +1,20 @@
 package com.jag.app;
 
-import com.jag.sort.BubbleSort;
+import com.jag.sort.SelectionSort;
 
 public class App {
 	public static void main(String[] args) {
 		
 		 int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
 		
-		BubbleSort bubbleSort = new BubbleSort();
-		bubbleSort.bubbleSort(arr);
+		// Bubble Sort
+		/*BubbleSort bubbleSort = new BubbleSort();
+		bubbleSort.bubbleSort(arr);*/
+		 
+		// Selection Sort
+		 SelectionSort selectionSort = new SelectionSort();
+		 selectionSort.selectionSort(arr);
+		 
 		System.out.println("Sorted Array: ");
 		App.printArray(arr);
 		
