@@ -1,17 +1,7 @@
-# LearnAlgorithms
-This is for my practice and notes to excel in Algorithms
+package com.jag.sort;
 
-Sorting Alogorithms:
-
-1. Bubble Sort: 
-	Definition: The sorting is done by repeatedly swapping the adjacent elements.
-	Time Complexity:O(n2) 
-	When it is good: O(n) for nearly sorted data
-	When it is bad:reversing the order
-	
-	
-	Implementation 1:
-	public void bubbleSort(int arr[]){
+public class BubbleSort {
+	/*public void bubbleSort(int arr[]){
 		int n = arr.length;
 		for(int i=0; i<n-1; i++){
 			for(int j=0; j<n-i-1; j++){
@@ -24,9 +14,8 @@ Sorting Alogorithms:
 				}
 			}
 		}
-	}
+	}*/
 	
-	Implementation 2:
 	public void bubbleSort(int arr[]){
 		boolean sorted = false;
 		while(!sorted){
@@ -42,3 +31,4 @@ Sorting Alogorithms:
 			}
 		}
 	}
+}
