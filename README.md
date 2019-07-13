@@ -51,7 +51,7 @@ This is for my practice and notes to excel in Algorithms
 	
 	```java
 	public void selectionSort(int arr[]){
-		for(int i=0;i<arr.length-1;i++){
+		for(int i=0;i<arr.length;i++){
 			int min = arr[i];
 			int minId = i;
 			for(int j=i+1; j<arr.length; j++){
@@ -60,7 +60,7 @@ This is for my practice and notes to excel in Algorithms
 					minId = j;
 				}
 			}
-			
+			//swap ith element with min
 			int temp = arr[i];
 			arr[i] = min;
 			arr[minId] = temp;
